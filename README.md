@@ -65,10 +65,13 @@ petstore-api-tests/
 │
 ├── README.md
 ├── requirements.txt
-└── tests/
-    └── test_pet_api.py
-    └── test_store_api.py
-    └── test_user_api.py
+├── tests/
+│   └── test_pet_api.py
+│   └── test_store_api.py
+│   └── test_user_api.py
+└── .github/
+    └── workflows/
+        └── test.yml
 
 ```
 
