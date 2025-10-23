@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+venv.bak/
+env.bak/
+
+# IDE-specific files
+.idea/
+*.swp
+*.swo
+*~
+
+# PyCharm
+# Please note that .idea folder is used by other IDEs, e.g. Android Studio.
+# If you're using other IDEs, you may exclude the following lines,
+# or use .gitignore in $PROJECT_DIR$/.idea/
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
