@@ -1,0 +1,25 @@
+name: Run Petstore API Tests # Имя workflow, которое будет отображаться в GitHub
+
+on: [push, pull_request] # Триггеры: запускать при каждом push и pull request
+
+jobs: # Определяем задачи (jobs), которые нужно выполнить
+  test: # Имя задачи
+    runs-on: ubuntu-latest # Используемый runner: виртуальная машина с Ubuntu
+
+    steps: # Последовательность шагов в задаче
+      - name: Checkout code # Шаг 1: Скачать код из репозитория в runner
+        uses: actions/checkout@v4 # Используем готовый action для этого
+
+      - name: Set up Python # Шаг 2: Установить Python на runner
+        uses: actions/setup-python@v5 # Используем готовый action
+        with: # Параметры для action
+          python-version: '3.x' # Указать версию Python (любая 3.x)
+
+      - name: Install dependencies # Шаг 3: Установить зависимости из requirements.txt
+        run: | # Выполнить команды в shell
+          python -m pip install --upgrade pip # Обновить pip
+          pip install -r requirements.txt # Установить пакеты из файла
+
+      - name: Run tests # Шаг 4: Запустить тесты pytest
+        run: |
+          pytest # Выполнить команду pytest
