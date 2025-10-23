@@ -72,7 +72,6 @@ petstore-api-tests/
 └── .github/
     └── workflows/
         └── test.yml
-
 ```
 
 ## 📞 Поддержка
